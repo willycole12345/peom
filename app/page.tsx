@@ -23,7 +23,7 @@ export default function Home() {
                     asChild
                     size="lg"
                     className="px-5 text-base">
-                    <Link href="#link">
+                    <Link href="/getstarted">
                       <span className="text-nowrap">Get Started</span>
                     </Link>
                   </Button>
@@ -198,5 +198,5 @@ export default function Home() {
         <ContentSection />
       </main>
     </>
-  )
+  );
 }

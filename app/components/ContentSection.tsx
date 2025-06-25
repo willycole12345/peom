@@ -35,5 +35,5 @@ export default async function ContentSection() {
                 </div>
             </div>
         </section>
-    )
+    );
 }

@@ -269,5 +269,5 @@ export default async function FooterSection() {
                 </div>
             </div>
         </footer>
-    )
+    );
 }
