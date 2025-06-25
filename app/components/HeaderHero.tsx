@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button'
 import React from 'react'
 import { cn } from '@/lib/utils'
 import { useScroll } from 'motion/react'
+import { ModeToggle } from './ModeToggle'
 
 interface iAppProps {
     name: string;
@@ -91,6 +92,7 @@ export const HeaderHero = () => {
                                 </ul>
                             </div>
                             <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
+
                                 <Button
                                     asChild
                                     variant="outline"
@@ -99,6 +101,7 @@ export const HeaderHero = () => {
                                         <span>Login</span>
                                     </Link>
                                 </Button>
+                                <ModeToggle />
                                 <Button
                                     asChild
                                     size="sm">
@@ -106,6 +109,7 @@ export const HeaderHero = () => {
                                         <span>Sign Up</span>
                                     </Link>
                                 </Button>
+
                             </div>
                         </div>
                     </div>

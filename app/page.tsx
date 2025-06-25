@@ -5,6 +5,7 @@ import { HeroHeader } from "./components/header"
 import { Card } from '@/components/ui/card'
 import Image from 'next/image'
 import ContentSection from './components/ContentSection'
+import { ModeToggle } from './components/ModeToggle'
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <HeroHeader />
       <main className="overflow-hidden">
         <section className=''>
+
           <div className="relative py-26">
             <div className="relative mx-auto flex max-w-5xl flex-col px-6 lg:block">
               <div className="mx-auto max-w-lg text-center lg:ml-0 lg:w-1/2 lg:text-left">
@@ -60,7 +62,7 @@ export default function Home() {
                     <div className="mb-4 rounded-full bg-primary py-0.5 px-2.5 border border-transparent text-xs text-white transition-all shadow-sm w-20 text-center">
                       POEM
                     </div>
-                    <h6 className="mb-2 text-slate-800 text-xl font-semibold">
+                    <h6 className="mb-2 dark:text-gray-400 text-slate-800 text-xl font-semibold">
                       Website Review Check
                     </h6>
                     <p className="text-black-500 dark:text-gray-400 mt-2 text-sm">
@@ -82,7 +84,7 @@ export default function Home() {
                     <div className="mb-4 rounded-full bg-primary py-0.5 px-2.5 border border-transparent text-xs text-white transition-all shadow-sm w-20 text-center">
                       POEM
                     </div>
-                    <h6 className="mb-2 text-slate-800 text-xl font-semibold">
+                    <h6 className="mb-2 text-slate-800 dark:text-gray-400 text-xl font-semibold">
                       Website Review Check
                     </h6>
                     <p className="text-black-500 dark:text-gray-400 mt-2 text-sm">
@@ -104,7 +106,7 @@ export default function Home() {
                     <div className="mb-4 rounded-full bg-primary py-0.5 px-2.5 border border-transparent text-xs text-white transition-all shadow-sm w-20 text-center">
                       POEM
                     </div>
-                    <h6 className="mb-2 text-slate-800 text-xl font-semibold">
+                    <h6 className="mb-2 text-slate-800 dark:text-gray-400 text-xl font-semibold">
                       Website Review Check
                     </h6>
                     <p className="text-black-500 dark:text-gray-400 mt-2 text-sm">
@@ -126,7 +128,29 @@ export default function Home() {
                     <div className="mb-4 rounded-full bg-primary py-0.5 px-2.5 border border-transparent text-xs text-white transition-all shadow-sm w-20 text-center">
                       POEM
                     </div>
-                    <h6 className="mb-2 text-slate-800 text-xl font-semibold">
+                    <h6 className="mb-2 text-slate-800 text-xl dark:text-gray-400 font-semibold">
+                      Website Review Check
+                    </h6>
+                    <p className="text-black-500 dark:text-gray-400 mt-2 text-sm">
+                      The place is close to Barceloneta Beach and bus stop just 2 min by walk
+                      and near to &quot;Naviglio&quot; where you can enjoy the main night life in
+                      Barcelona.
+                    </p>
+                  </div>
+                </Card>
+                <Card className="p-px bg-inherit text-card-foreground flex flex-col gap-2 rounded-none border-none shadow-none">
+                  <div className="relative overflow-hidden text-white">
+                    <Image src="/samplephoto.jpeg"
+                      width={450}
+                      height={450}
+                      alt="Picture of the author"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <div className="mb-4 rounded-full bg-primary py-0.5 px-2.5 border border-transparent text-xs text-white dark:text-black-400 transition-all shadow-sm w-20 text-center">
+                      POEM
+                    </div>
+                    <h6 className="mb-2 text-slate-800 dark:text-gray-400 text-xl font-semibold">
                       Website Review Check
                     </h6>
                     <p className="text-black-500 dark:text-gray-400 mt-2 text-sm">
@@ -148,29 +172,7 @@ export default function Home() {
                     <div className="mb-4 rounded-full bg-primary py-0.5 px-2.5 border border-transparent text-xs text-white transition-all shadow-sm w-20 text-center">
                       POEM
                     </div>
-                    <h6 className="mb-2 text-slate-800 text-xl font-semibold">
-                      Website Review Check
-                    </h6>
-                    <p className="text-black-500 dark:text-gray-400 mt-2 text-sm">
-                      The place is close to Barceloneta Beach and bus stop just 2 min by walk
-                      and near to &quot;Naviglio&quot; where you can enjoy the main night life in
-                      Barcelona.
-                    </p>
-                  </div>
-                </Card>
-                <Card className="p-px bg-inherit text-card-foreground flex flex-col gap-2 rounded-none border-none shadow-none">
-                  <div className="relative overflow-hidden text-white">
-                    <Image src="/samplephoto.jpeg"
-                      width={450}
-                      height={450}
-                      alt="Picture of the author"
-                    />
-                  </div>
-                  <div className="p-4">
-                    <div className="mb-4 rounded-full bg-primary py-0.5 px-2.5 border border-transparent text-xs text-white transition-all shadow-sm w-20 text-center">
-                      POEM
-                    </div>
-                    <h6 className="mb-2 text-slate-800 text-xl font-semibold">
+                    <h6 className="mb-2 text-slate-800 dark:text-gray-400 text-xl font-semibold">
                       Website Review Check
                     </h6>
                     <p className="text-black-500 dark:text-gray-400 mt-2 text-sm">
