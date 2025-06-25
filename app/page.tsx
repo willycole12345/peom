@@ -2,10 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { HeroHeader } from "./components/header"
-import { ChevronRight, CirclePlay } from 'lucide-react'
 import { Card } from '@/components/ui/card'
 import Image from 'next/image'
-import Started from './components/Started'
 import ContentSection from './components/ContentSection'
 
 export default function Home() {
@@ -41,8 +39,8 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className=''>
-          <div className="">
+        <section className='bg-inherit'>
+          <div className="py-10">
             {/* <div className="mx-auto max-w-5xl px-6"> */}
             <div className="relative z-10 mx-auto w-full max-w-5xl px-6">
               <div>

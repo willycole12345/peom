@@ -2,15 +2,15 @@ import Image from 'next/image'
 
 export default async function ContentSection() {
     return (
-        <section className="bg-linear-to-b to-muted from-background  py-16">
-            {/* <section className="bg-linear-to-b to-muted from-background py-16 md:py-16"> */}
+        <section className="bg-inherit  py-16">
+            {/* <section className="bg-linear-to-b to-muted from-background bg-linear-to-b to-muted from-background py-16 md:py-16"> */}
             <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-16">
                 <h4 className="relative z-10 max-w-xl text-4xl font-medium lg:text-5xl">Peom of the day</h4>
                 <div className="grid gap-6 sm:grid-cols-2 md:gap-12 lg:gap-24">
                     <div className="relative mb-6 sm:mb-0">
                         <div className="bg-linear-to-b aspect-76/59 relative rounded-2xl from-zinc-300 to-transparent p-px dark:from-zinc-700">
-                            <Image src="/samplephoto.jpeg" className="hidden rounded-[15px] dark:block" alt="payments illustration dark" width={1207} height={929} />
-                            <Image src="/samplephoto.jpeg" className="rounded-[15px] shadow dark:hidden" alt="payments illustration light" width={1207} height={929} />
+                            <Image src="/unknow.jpg" className="hidden rounded-[15px] dark:block" alt="payments illustration dark" width={1207} height={929} />
+                            <Image src="/unknow.jpg" className="rounded-[15px] shadow dark:hidden" alt="payments illustration light" width={1207} height={929} />
                         </div>
                     </div>
 
