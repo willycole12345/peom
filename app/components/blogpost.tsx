@@ -1,3 +1,4 @@
+import React from 'react'
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import { Card } from '@/components/ui/card'
 import Image from 'next/image'

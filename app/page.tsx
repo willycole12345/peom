@@ -33,8 +33,8 @@ export default function Home() {
                 className="-z-10 order-first ml-auto h-56 w-full object-cover sm:h-96 lg:absolute lg:inset-0 lg:-right-10 lg:-top-10 lg:order-last lg:h-max lg:w-6/12 lg:object-contain dark:mix-blend-lighten dark:invert-0"
                 src="/pdmisc1.png"
                 alt="Abstract Object"
-                height="400"
-                width="300"
+                height={400}
+                width={300}
               />
             </div>
           </div>
