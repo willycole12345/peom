@@ -5,7 +5,6 @@ import { HeroHeader } from "./components/header"
 import { Card } from '@/components/ui/card'
 import Image from 'next/image'
 import ContentSection from './components/ContentSection'
-import Blogpost from './components/blogpost'
 
 export default function Home() {
   return (
