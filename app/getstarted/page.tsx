@@ -3,10 +3,12 @@ import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
 import { Check } from 'lucide-react'
+import { HeroHeader } from '../components/header'
 
 export default async function getstarted() {
     return (
         <>
+            <HeroHeader />
             <section className="py-16 md:py-32">
                 <div className="mx-auto max-w-6xl px-6">
                     <div className="mx-auto max-w-2xl space-y-6 text-center">

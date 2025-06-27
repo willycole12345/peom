@@ -17,7 +17,8 @@ const menuItems: iAppProps[] = [
     { name: 'Poem', href: '#link' },
     { name: 'Poem Guides', href: '#link' },
     { name: 'Topic & Themes', href: '#link' },
-    { name: 'About', href: '#link' },
+    { name: 'About', href: '/About' },
+    { name: 'Contact Us', href: '/contact' },
 ]
 
 
