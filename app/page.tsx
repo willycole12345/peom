@@ -17,7 +17,7 @@ export default function Home() {
             <div className="relative mx-auto flex max-w-5xl flex-col px-6 lg:block">
               <div className="mx-auto max-w-lg text-center lg:ml-0 lg:w-1/2 lg:text-left">
                 <h1 className="mt-8 max-w-2xl text-balance text-5xl font-medium md:text-6xl lg:mt-16 xl:text-7xl">Start Your Poem Journey with Us</h1>
-                <p className="mt-8 max-w-2xl text-pretty text-lg">One tool that does it all. Analyze, and chat—right inside process poem</p>
+                <p className="mt-8 max-w-2xl text-pretty text-lg">{`One tool that does it all. Analyze, and chat—right inside process poem`}</p>
 
                 <div className="mt-12 flex flex-col items-center justify-center gap-2 sm:flex-row lg:justify-start">
                   <Button
@@ -66,9 +66,9 @@ export default function Home() {
                       Website Review Check
                     </h6>
                     <p className="text-black-500 dark:text-gray-400 mt-2 text-sm">
-                      The place is close to Barceloneta Beach and bus stop just 2 min by walk
+                      {`The place is close to Barceloneta Beach and bus stop just 2 min by walk
                       and near to &quot;Naviglio&quot; where you can enjoy the main night life in
-                      Barcelona.
+                      Barcelona.`}
                     </p>
                   </div>
                 </Card>
@@ -88,9 +88,9 @@ export default function Home() {
                       Website Review Check
                     </h6>
                     <p className="text-black-500 dark:text-gray-400 mt-2 text-sm">
-                      The place is close to Barceloneta Beach and bus stop just 2 min by walk
+                      {`The place is close to Barceloneta Beach and bus stop just 2 min by walk
                       and near to &quot;Naviglio&quot; where you can enjoy the main night life in
-                      Barcelona.
+                      Barcelona.`}
                     </p>
                   </div>
                 </Card>
@@ -110,9 +110,9 @@ export default function Home() {
                       Website Review Check
                     </h6>
                     <p className="text-black-500 dark:text-gray-400 mt-2 text-sm">
-                      The place is close to Barceloneta Beach and bus stop just 2 min by walk
+                      {`The place is close to Barceloneta Beach and bus stop just 2 min by walk
                       and near to &quot;Naviglio&quot; where you can enjoy the main night life in
-                      Barcelona.
+                      Barcelona.`}
                     </p>
                   </div>
                 </Card>
@@ -132,9 +132,9 @@ export default function Home() {
                       Website Review Check
                     </h6>
                     <p className="text-black-500 dark:text-gray-400 mt-2 text-sm">
-                      The place is close to Barceloneta Beach and bus stop just 2 min by walk
+                      {`  The place is close to Barceloneta Beach and bus stop just 2 min by walk
                       and near to &quot;Naviglio&quot; where you can enjoy the main night life in
-                      Barcelona.
+                      Barcelona.`}
                     </p>
                   </div>
                 </Card>
@@ -154,9 +154,9 @@ export default function Home() {
                       Website Review Check
                     </h6>
                     <p className="text-black-500 dark:text-gray-400 mt-2 text-sm">
-                      The place is close to Barceloneta Beach and bus stop just 2 min by walk
+                      {`  The place is close to Barceloneta Beach and bus stop just 2 min by walk
                       and near to &quot;Naviglio&quot; where you can enjoy the main night life in
-                      Barcelona.
+                      Barcelona.`}
                     </p>
                   </div>
                 </Card>
@@ -176,9 +176,9 @@ export default function Home() {
                       Website Review Check
                     </h6>
                     <p className="text-black-500 dark:text-gray-400 mt-2 text-sm">
-                      The place is close to Barceloneta Beach and bus stop just 2 min by walk
+                      {`  The place is close to Barceloneta Beach and bus stop just 2 min by walk
                       and near to &quot;Naviglio&quot; where you can enjoy the main night life in
-                      Barcelona.
+                      Barcelona.`}
                     </p>
                   </div>
                 </Card>
