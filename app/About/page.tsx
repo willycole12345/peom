@@ -2,8 +2,9 @@ import React from 'react'
 import Image from 'next/image';
 import AboutBanner from '../../public/aboutus.jpg'
 import { HeroHeader } from '../components/header';
+import FooterSection from '../components/FooterSection';
 
-export default function About() {
+export default function about() {
     return (
         <>
             <HeroHeader />
@@ -47,6 +48,7 @@ export default function About() {
                     </div>
                 </section>
             </main >
+            <FooterSection />
         </>
     );
 }

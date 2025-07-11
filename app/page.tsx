@@ -2,11 +2,16 @@ import React from 'react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { HeroHeader } from "./components/header"
-import { Card } from '@/components/ui/card'
 import Image from 'next/image'
 import ContentSection from './components/ContentSection'
+import { PeomsDetails, featurePeoms } from "@/app/actions";
+import CardSection from './components/CardSection'
+import FooterSection from './components/FooterSection'
 
-export default function Home() {
+
+export default async function Home() {
+  const peoms = await PeomsDetails();
+  const featpeoms = await featurePeoms();
   return (
     <>
       <HeroHeader />
@@ -43,198 +48,19 @@ export default function Home() {
         <ContentSection />
         <section className='bg-inherit'>
           <div className="py-10">
-            {/* <div className="mx-auto max-w-5xl px-6"> */}
-            <div className="relative z-10 mx-auto w-full max-w-5xl px-6">
-              <div>
-                <h2 className="text-balance text-3xl font-semibold md:text-4xl">Recent Peoms </h2>
-                {/* <p className="text-muted-foreground mt-3 text-lg">Connect seamlessly with popular platforms and services to enhance your workflow.</p> */}
-              </div>
-              <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                <Card className="p-px bg-inherit text-card-foreground flex flex-col gap-2 rounded-none border-none shadow-none">
-                  <div className="relative overflow-hidden text-white">
-                    <Image src="/samplephoto.jpeg"
-                      width={450}
-                      height={450}
-                      alt="Picture of the author"
-                    />
-                  </div>
-                  <div className="p-4">
-                    <div className="mb-4 rounded-full bg-primary py-0.5 px-2.5 border border-transparent text-xs text-white transition-all shadow-sm w-20 text-center">
-                      POEM
-                    </div>
-                    <h6 className="mb-2 dark:text-gray-400 text-slate-800 text-xl font-semibold">
-                      Website Review Check
-                    </h6>
-                    <p className="text-black-500 dark:text-gray-400 mt-2 text-sm">
-                      {`The place is close to Barceloneta Beach and bus stop just 2 min by walk
-                      and near to &quot;Naviglio&quot; where you can enjoy the main night life in
-                      Barcelona.`}
-                    </p>
-                  </div>
-                </Card>
-                <Card className="p-px bg-inherit text-card-foreground flex flex-col gap-2 rounded-none border-none shadow-none">
-                  <div className="relative overflow-hidden text-white">
-                    <Image src="/samplephoto.jpeg"
-                      width={450}
-                      height={450}
-                      alt="Picture of the author"
-                    />
-                  </div>
-                  <div className="p-4">
-                    <div className="mb-4 rounded-full bg-primary py-0.5 px-2.5 border border-transparent text-xs text-white transition-all shadow-sm w-20 text-center">
-                      POEM
-                    </div>
-                    <h6 className="mb-2 text-slate-800 dark:text-gray-400 text-xl font-semibold">
-                      Website Review Check
-                    </h6>
-                    <p className="text-black-500 dark:text-gray-400 mt-2 text-sm">
-                      {`The place is close to Barceloneta Beach and bus stop just 2 min by walk
-                      and near to &quot;Naviglio&quot; where you can enjoy the main night life in
-                      Barcelona.`}
-                    </p>
-                  </div>
-                </Card>
-                <Card className="p-px bg-inherit text-card-foreground flex flex-col gap-2 rounded-none border-none shadow-none">
-                  <div className="relative overflow-hidden text-white">
-                    <Image src="/samplephoto.jpeg"
-                      width={450}
-                      height={450}
-                      alt="Picture of the author"
-                    />
-                  </div>
-                  <div className="p-4">
-                    <div className="mb-4 rounded-full bg-primary py-0.5 px-2.5 border border-transparent text-xs text-white transition-all shadow-sm w-20 text-center">
-                      POEM
-                    </div>
-                    <h6 className="mb-2 text-slate-800 dark:text-gray-400 text-xl font-semibold">
-                      Website Review Check
-                    </h6>
-                    <p className="text-black-500 dark:text-gray-400 mt-2 text-sm">
-                      {`The place is close to Barceloneta Beach and bus stop just 2 min by walk
-                      and near to &quot;Naviglio&quot; where you can enjoy the main night life in
-                      Barcelona.`}
-                    </p>
-                  </div>
-                </Card>
-                <Card className="p-px bg-inherit text-card-foreground flex flex-col gap-2 rounded-none border-none shadow-none">
-                  <div className="relative overflow-hidden text-white">
-                    <Image src="/samplephoto.jpeg"
-                      width={450}
-                      height={450}
-                      alt="Picture of the author"
-                    />
-                  </div>
-                  <div className="p-4">
-                    <div className="mb-4 rounded-full bg-primary py-0.5 px-2.5 border border-transparent text-xs text-white transition-all shadow-sm w-20 text-center">
-                      POEM
-                    </div>
-                    <h6 className="mb-2 text-slate-800 text-xl dark:text-gray-400 font-semibold">
-                      Website Review Check
-                    </h6>
-                    <p className="text-black-500 dark:text-gray-400 mt-2 text-sm">
-                      {`  The place is close to Barceloneta Beach and bus stop just 2 min by walk
-                      and near to &quot;Naviglio&quot; where you can enjoy the main night life in
-                      Barcelona.`}
-                    </p>
-                  </div>
-                </Card>
-                <Card className="p-px bg-inherit text-card-foreground flex flex-col gap-2 rounded-none border-none shadow-none">
-                  <div className="relative overflow-hidden text-white">
-                    <Image src="/samplephoto.jpeg"
-                      width={450}
-                      height={450}
-                      alt="Picture of the author"
-                    />
-                  </div>
-                  <div className="p-4">
-                    <div className="mb-4 rounded-full bg-primary py-0.5 px-2.5 border border-transparent text-xs text-white dark:text-black-400 transition-all shadow-sm w-20 text-center">
-                      POEM
-                    </div>
-                    <h6 className="mb-2 text-slate-800 dark:text-gray-400 text-xl font-semibold">
-                      Website Review Check
-                    </h6>
-                    <p className="text-black-500 dark:text-gray-400 mt-2 text-sm">
-                      {`  The place is close to Barceloneta Beach and bus stop just 2 min by walk
-                      and near to &quot;Naviglio&quot; where you can enjoy the main night life in
-                      Barcelona.`}
-                    </p>
-                  </div>
-                </Card>
-                <Card className="p-px bg-inherit text-card-foreground flex flex-col gap-2 rounded-none border-none shadow-none">
-                  <div className="relative overflow-hidden text-white">
-                    <Image src="/samplephoto.jpeg"
-                      width={450}
-                      height={450}
-                      alt="Picture of the author"
-                    />
-                  </div>
-                  <div className="p-4">
-                    <div className="mb-4 rounded-full bg-primary py-0.5 px-2.5 border border-transparent text-xs text-white transition-all shadow-sm w-20 text-center">
-                      POEM
-                    </div>
-                    <h6 className="mb-2 text-slate-800 dark:text-gray-400 text-xl font-semibold">
-                      Website Review Check
-                    </h6>
-                    <p className="text-black-500 dark:text-gray-400 mt-2 text-sm">
-                      {`  The place is close to Barceloneta Beach and bus stop just 2 min by walk
-                      and near to &quot;Naviglio&quot; where you can enjoy the main night life in
-                      Barcelona.`}
-                    </p>
-                  </div>
-                </Card>
-              </div>
-              <div className='py-2'>
-                <div className="flex justify-end gap-3">
-                  <Button
-                    asChild
-                    variant="outline"
-                    size="lg">
-                    <Link href="#">View all poems </Link>
-                  </Button>
-                </div>
-              </div>
-            </div>
+            <CardSection title={'Recent Poem'} records={peoms} buttonshow={true} />
           </div>
         </section>
         {/* <Started /> */}
 
         <section className='bg-inherit'>
           <div className="py-10">
-            {/* <div className="mx-auto max-w-5xl px-6"> */}
-            <div className="relative z-10 mx-auto w-full max-w-5xl px-6">
-              <div>
-                <h2 className="text-balance text-3xl font-semibold md:text-4xl">Featured Poets </h2>
-                {/* <p className="text-muted-foreground mt-3 text-lg">Connect seamlessly with popular platforms and services to enhance your workflow.</p> */}
-              </div>
-              <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                <Card className="p-px bg-inherit text-card-foreground flex flex-col gap-2 rounded-none border-none shadow-none">
-                  <div className="relative overflow-hidden text-white">
-                    <Image src="/samplephoto.jpeg"
-                      width={450}
-                      height={450}
-                      alt="Picture of the author"
-                    />
-                  </div>
-                  <div className="p-4">
-                    <div className="mb-4 rounded-full bg-primary py-0.5 px-2.5 border border-transparent text-xs text-white transition-all shadow-sm w-20 text-center">
-                      POEM
-                    </div>
-                    <h6 className="mb-2 dark:text-gray-400 text-slate-800 text-xl font-semibold">
-                      Website Review Check
-                    </h6>
-                    <p className="text-black-500 dark:text-gray-400 mt-2 text-sm">
-                      The place is close to Barceloneta Beach and bus stop just 2 min by walk
-                      and near to &quot;Naviglio&quot; where you can enjoy the main night life in
-                      Barcelona.
-                    </p>
-                  </div>
-                </Card>
-              </div>
-            </div>
+            <CardSection title={'Feature Poem'} records={featpeoms} buttonshow={true} />
           </div>
         </section>
         {/* <Blogpost /> */}
       </main>
+      <FooterSection />
     </>
   );
 }

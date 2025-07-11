@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
 import { Check } from 'lucide-react'
 import { HeroHeader } from '../components/header'
+import FooterSection from '../components/FooterSection'
 
 export default async function getstarted() {
     return (
@@ -117,7 +118,7 @@ export default async function getstarted() {
                     </div>
                 </div>
             </section>
-
+            <FooterSection />
         </>
     );
 }

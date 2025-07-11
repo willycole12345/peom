@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/button'
 import { Label } from '@/components/ui/label';
 import Link from 'next/link';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
+import FooterSection from '../components/FooterSection';
 
 
 export default async function contact() {
@@ -139,7 +140,9 @@ export default async function contact() {
                         </div>
                     </div>
                 </section>
+
             </main>
+            <FooterSection />
         </>
     );
 }
