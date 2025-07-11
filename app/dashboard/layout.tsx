@@ -9,7 +9,7 @@ import {
     SidebarProvider,
 } from "@/components/ui/sidebar"
 
-import data from "./data.json"
+// import data from "./data.json"
 
 export default function DashboardLayout({ children }: { children: ReactNode }) {
     return (

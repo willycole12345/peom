@@ -20,11 +20,11 @@ type PeomDetailsRecord = {
     audio: string | null;
     image: string | null;
     content: string | null;
-    slug: string | null;
-    published: string | null;
-    authorId: number;
-    createdAt: Date;
-    updatedAt: Date;
+    // slug: string | null;
+    // published: string | null;
+    // authorId: number;
+    // createdAt: Date;
+    // updatedAt: Date;
 };
 
 type PeomDetails = {
@@ -44,7 +44,7 @@ export default async function CardSection({ title, records, buttonshow }: PeomDe
                     {/* <p className="text-muted-foreground mt-3 text-lg">Connect seamlessly with popular platforms and services to enhance your workflow.</p> */}
                 </div>
                 <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                    {records.map((record: any) => (
+                    {records.map((record) => (
 
                         // <CardSection id={peom.id} title={'Recent Peom'} picture={peom.picture} posttype={peom.posttype} posttitle={peom.posttitle} description={peom.description} />
 
