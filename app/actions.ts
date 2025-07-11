@@ -5,6 +5,7 @@ import prisma from "@/app/libs/db"; // adjust path if needed
 export async function PeomsDetails() {
     const posts = await prisma.post.findMany();
     // console.log(posts);
+    //ms
     return posts;
 }
 
